@@ -44,14 +44,12 @@ jQuery(window).resize(function () {
 function mostrarp(divNum,btns){
 	document.getElementById("text1").classList.add("hide");
 	document.getElementById("text2").classList.add("hide");
-	document.getElementById("text3").classList.add("hide");
 
 	
 	
 
 	document.getElementById("btn1").classList.remove("activo");
 	document.getElementById("btn2").classList.remove("activo");
-	document.getElementById("btn3").classList.remove("activo");
 	
   
 	// Show the specific div
