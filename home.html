@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Page Transitions</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c4b7d7f020.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="bgcontenedor">
+    <div class="gris"></div>
+    <div class="negro"></div>
+    <div class="contep">
+      <div class="princ btn1" onclick="mostrarp(1,1)" id="btn1">
+        <h2 style="color: #009eb3;">1.</h2> <p>El comité revisa y opina</p>
+      </div>
+
+      <div class="princ btn2" onclick="mostrarp(2,2)" id="btn2">
+        <h2 style="color: #009eb3;">2.</h2> <p>El consejo recomienda y aprueba</p>
+      </div>
+
+      <div class="princ btn1" onclick="mostrarp(3,3)" id="btn3">
+        <h2 style="color: #009eb3;">3.</h2> <p>La asamblea hace oficial</p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="texto1 hide align-items-center" id="text1">
+    <div class="contelot" id="lot1"></div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text2">
+    <div class="contelot" id="lot2"></div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text3">
+    <div class="contelot" id="lot3"></div>
+  </div>
+
+
+
+  <div class="texto1  hide align-items-center" id="text4">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h2 style="color:#d18a29"><i>Transparency</i> – Transparencia</h2>
+      <p class="parr">en prácticas que se realizan como difundir una vacante, la manera de expresarnos, transparencia en
+        publicación de salarios.
+      </p>
+    </div>
+    <div class="contelot" id="lot4"></div>
+  </div>
+
+  <div class="texto1  hide align-items-center" id="text5">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h2 style="color:#d18a29"><i>Integrity</i> – Integridad</h2>
+      <p class="parr">realmente hago lo que digo, se predica con el ejemplo.
+      </p>
+    </div>
+    <div class="contelot" id="lot5"></div>
+  </div>
+
+  <div class="texto1  hide align-items-center" id="text6">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h2 style="color:#d18a29"><i>Learning</i> – Aprendizaje:</h2>
+      <p class="parr">aprender de diferencias y construir cosas valiosas, puede haber diversidad, pero cada uno se queda
+        con sus diferencias.
+      </p>
+    </div>
+    <div class="contelot" id="lot6"></div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text7">
+    <div class="conte-parr d-flex align-content-center flex-wrap">
+      <h2 style="color:#d18a29"><i>Empowering</i> – Empoderamiento</h2>
+      <p class="parr">para generar el cambio.
+      </p>
+    </div>
+    <div class="contelot" id="lot7"></div>
+  </div>
+
+
+
+
+  <div class="texto1 hide align-items-center" id="text8">
+    <div class="d-flex align-content-center flex-wrap">
+      <h2 style="color:#d18a29">2010</h2><br>
+      <p class="parr8">Se crea la fundación Ellen MacArthur con el objetivo de promover la economía circular como nuevo
+        paradigma de
+        producción y consumo mundial. Aunque el término economía circular se atribuye inicialmente a la obra de Pearce y
+        Turner (1990) y luego a William McDonough autor del libro “De la cuna a la cuna: rediseñando la forma en que
+        hacemos las cosas”, la Fundación Ellen MacArthur ha liderado la producción de investigaciones y documentos para
+        hacedores de política y profesionales en torno a la economía circular.
+      </p>
+
+    </div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text9">
+    <div class="d-flex align-content-center flex-wrap">
+      <h2 style="color:#d18a29">2015</h2><br>
+      <p class="parr9">Las Naciones Unidas establecieron los Objetivos de <b>desarrollo sostenible</b>, también
+        denominados Objetivos
+        Globales, cuya meta general es que para 2030 las personas disfruten de paz y prosperidad. Se contemplan
+        diecisiete objetivos, entre los que destacan: fin de la pobreza, hambre cero; salud y bienestar; educación de
+        calidad; igualdad de género; agua limpia y saneamiento; energía asequible y no contaminante; etcétera. Al
+        profundizar en cada uno se encuentran las metas e indicadores que precisan su cumplimiento (Naciones Unidas, s.
+        f.).
+      </p>
+    </div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text10">
+    <div class="d-flex align-content-center flex-wrap">
+      <h2 style="color:#d18a29">2020</h2><br>
+      <p class="parr10">Las consecuencias de la pandemia por COVID-19 causaron estragos dejando al descubierto las
+        múltiples
+        deficiencias en las dimensiones económica, social y ambiental. A la fecha su impacto sigue presente en las
+        sociedades de todo el mundo haciendo un llamado a la unión de esfuerzos para superar una fase que ha trastocado
+        al ser humano.
+      </p>
+    </div>
+  </div>
+
+  <div class="texto1 hide align-items-center" id="text11">
+    <div class="d-flex align-content-center flex-wrap">
+      <h2 style="color:#d18a29">2022</h2><br>
+      <p class="parr11">El último estudio del Grupo Intergubernamental de Expertos sobre el Cambio Climático (IPCC)
+        evidenció que el
+        impacto de las actividades humanas sobre el cambio climático es irrefutable. Una verdad que hoy parece obvia
+        pero que nos tardó décadas aceptar y que incluso gobiernos recientes, aún niegan con vehemencia, argumentando
+        ciclos naturales del clima, ajenos a los impactos del ser humano.
+      </p>
+    </div>
+  </div>
+
+
+  <!-------------scripts------------------>
+
+  <script>
+    var animationOptions1 = {
+      container: document.getElementById('lot1'),
+      path: 'pant1.json', // Reemplaza con la ruta de tu archivo Lottie
+      renderer: 'svg',
+      loop: false,
+      autoplay: false,
+    };
+
+    var anim1 = bodymovin.loadAnimation(animationOptions1);
+
+        var playButton = document.getElementById('btn1');
+
+        playButton.addEventListener('click', function() {
+            anim1.goToAndPlay(0, true); 
+        });
+  </script>
+
+<script>
+  var animationOptions2 = {
+    container: document.getElementById('lot2'),
+    path: 'pant2.json', // Reemplaza con la ruta de tu archivo Lottie
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+  };
+
+  var anim2 = bodymovin.loadAnimation(animationOptions2);
+
+      var playButton = document.getElementById('btn2');
+
+      playButton.addEventListener('click', function() {
+          anim2.goToAndPlay(0, true); 
+      });
+</script>
+
+<script>
+  var animationOptions3 = {
+    container: document.getElementById('lot3'),
+    path: 'pant3.json', // Reemplaza con la ruta de tu archivo Lottie
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+  };
+
+  var anim3 = bodymovin.loadAnimation(animationOptions3);
+
+      var playButton = document.getElementById('btn3');
+
+      playButton.addEventListener('click', function() {
+          anim3.goToAndPlay(0, true); 
+      });
+</script>
+
+<script>
+  var animationOptions = {
+    container: document.getElementById('lot4'),
+    path: 'pant3.json', // Reemplaza con la ruta de tu archivo Lottie
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+  };
+
+  // Cargar la animación
+  var animsol2 = bodymovin.loadAnimation(animationOptions);
+</script>
+
+<script>
+  var animationOptions = {
+    container: document.getElementById('lot5'),
+    path: 'pant6.json', // Reemplaza con la ruta de tu archivo Lottie
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+  };
+
+  // Cargar la animación
+  var animsol2 = bodymovin.loadAnimation(animationOptions);
+</script>
+
+
+<script>
+  var animationOptions = {
+    container: document.getElementById('lot6'),
+    path: 'pantlern.json', // Reemplaza con la ruta de tu archivo Lottie
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+  };
+
+  // Cargar la animación
+  var animsol2 = bodymovin.loadAnimation(animationOptions);
+</script>
+
+<script>
+  var animationOptions = {
+    container: document.getElementById('lot7'),
+    path: 'pant7.json', // Reemplaza con la ruta de tu archivo Lottie
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+  };
+
+  // Cargar la animación
+  var animsol2 = bodymovin.loadAnimation(animationOptions);
+</script>
+
+
+
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

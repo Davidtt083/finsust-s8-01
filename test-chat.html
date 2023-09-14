@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatGPT Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-log"></div>
+        <input type="text" id="user-input" placeholder="Escribe un mensaje..." />
+        <button id="send-btn">Enviar</button>
+    </div>
+
+    <script>
+        // Variables de configuración
+        const API_KEY = '5o0kU5kVkDEpQhkgw3iqT3BlbkFJ9wBlQpzYeLPsoHon2HjN';
+        const API_URL = 'https://api.openai.com/v1/chat/completions';
+
+        // Función para enviar una solicitud a la API de ChatGPT
+        function sendMessage(message) {
+            $.ajax({
+                url: API_URL,
+                headers: {
+                    'Authorization': 'Bearer ' + API_KEY,
+                    'Content-Type': 'application/json'
+                },
+                method: 'POST',
+                data: JSON.stringify({
+                    'messages': [{'role': 'system', 'content': 'initialize'}, {'role': 'user', 'content': message}]
+                }),
+                success: function (response) {
+                    displayMessage(response.choices[0].message.content);
+                },
+                error: function (error) {
+                    console.log('Error:', error);
+                }
+            });
+        }
+
+        // Función para mostrar un mensaje en la interfaz de usuario
+        function displayMessage(message) {
+            var chatLog = document.getElementById('chat-log');
+            var messageElement = document.createElement('div');
+            messageElement.innerHTML = '<strong>ChatGPT:</strong> ' + message;
+            chatLog.appendChild(messageElement);
+        }
+
+        // Manejador de eventos para enviar mensajes
+        $('#send-btn').click(function () {
+            var userInput = $('#user-input').val();
+            displayMessage(userInput);
+            sendMessage(userInput);
+            $('#user-input').val('');
+        });
+
+        // Función para enviar una solicitud a la API de ChatGPT
+function sendMessage(message) {
+    $.ajax({
+        url: API_URL,
+        headers: {
+            'Authorization': 'Bearer ' + API_KEY,
+            'Content-Type': 'application/json'
+        },
+        method: 'POST',
+        data: JSON.stringify({
+            'messages': [{'role': 'system', 'content': 'initialize'}, {'role': 'user', 'content': message}]
+        }),
+        success: function (response) {
+            var reply = response.choices[0].message.content;
+            displayMessage(reply);
+        },
+        error: function (error) {
+            console.log('Error:', error);
+        }
+    });
+}
+
+    </script>
+</body>
+</html>
